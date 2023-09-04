@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="payment-output">
+      <div class="provider">
+        <img
+          src="https://cdn.pixabay.com/photo/2014/08/20/09/04/frame-422371_1280.png"
+          alt=""
+          class="silver-box"
+        />
+        <div>
+          <div class="card-logo-container">
+            <img id="card-logo" src="" alt="" class="card-logo" />
+          </div>
+        </div>
+      </div>
+      <div id="card-number-output" class="card-number-output"></div>
+      <div class="detail">
+        <div class="holder-box">
+          <h6>CARD HOLDER</h6>
+          <div id="card-holder-output"></div>
+        </div>
+        <div class="expiration-box">
+          <h6>EXPIRES</h6>
+          <span id="expiration-month-output"></span>
+          /
+          <span id="expiration-year-output"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="payment-container">
+      <div class="card">
+        <div class="card-number">
+          <h6>CARD NUMBER</h6>
+          <input
+            type="text"
+            id="card-number-1"
+            maxlength="4"
+            class="card-number-input"
+          />
+          <input
+            type="text"
+            id="card-number-2"
+            maxlength="4"
+            class="card-number-input"
+          />
+          <input
+            type="text"
+            id="card-number-3"
+            maxlength="4"
+            class="card-number-input"
+          />
+          <input
+            type="text"
+            id="card-number-4"
+            maxlength="4"
+            class="card-number-input"
+          />
+        </div>
+
+        <div class="card-holder">
+          <h6>CARD HOLDER</h6>
+          <input type="text" id="card-holder" placeholder="Type your First and Last name..."/>
+        </div>
+
+        <div class="confirmation">
+          <div class="expiration-date">
+            <h6>EXPIRATION DATE</h6>
+            <select id="expiration-month">
+              <option value="" disabled selected>--</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <select id="expiration-year">
+              <option value="" disabled selected>--</option>
+              <option value="23">2023</option>
+              <option value="24">2024</option>
+              <option value="25">2025</option>
+              <option value="26">2026</option>
+              <option value="27">2027</option>
+              <option value="28">2028</option>
+              <option value="29">2029</option>
+              <option value="30">2030</option>
+              <option value="31">2031</option>
+              <option value="32">2032</option>
+            </select>
+          </div>
+
+          <div>
+            <h6>CVV</h6>
+            <input type="text" id="cvv" maxlength="4" />
+          </div>
+        </div>
+
+        <button id="submit-button">SUBMIT</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
